@@ -1,0 +1,10 @@
+.main2 {
+  flex: 1;
+  padding-top:5px;
+  min-height: calc(100vh - 30px);
+  /*min-height: calc(100vh + 100px);*/
+}
+  
+.bg-dark {
+  background-color: #12002b;
+}
