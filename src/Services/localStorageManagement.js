@@ -8,4 +8,10 @@ function recordOfTokenInLocalStorage(token,rememberMe) {
     }
 }
 
-export {recordOfTokenInLocalStorage}
+function deleteTokenInLocalStorage() {
+    
+    localStorage.removeItem('token')
+    sessionStorage.removeItem('token')
+}
+
+export {recordOfTokenInLocalStorage,deleteTokenInLocalStorage}

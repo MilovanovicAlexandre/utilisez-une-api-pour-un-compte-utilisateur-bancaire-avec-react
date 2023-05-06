@@ -46,3 +46,41 @@
     max-width: 100%;
     width: 200px;
 }
+
+.main-nav-item-logIn{
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-nav-container1 {
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-nav-item-logOut {
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:5px;
+}
+
+.main-nav-item-textLogIn {
+    margin-left:5px;
+}
+
+.main-nav-item-textLogOut {
+    margin-left:5px;
+}
+
+.main-nav-item2 {
+    text-decoration: none;
+}
+
+.main-nav-item2:hover {
+    text-decoration: underline;
+}
