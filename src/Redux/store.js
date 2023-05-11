@@ -43,6 +43,11 @@ const actionUpdateUserProfileFail = (payload) => ({
     payload: payload
 })
 
+const actionLogInPassLocalStorage = (payload) => ({
+    type: 'LogInPassLocalStorage',
+    payload:payload
+})
+
 const actionLogOut = (payload) => ({
     type: 'LogOut',
     payload: payload
@@ -79,8 +84,7 @@ function reducer(state = initialState, action){
 
         return {
             ...state,
-            error:true,
-            presentState: 'FailGetUserProfile' 
+            error:true
         }
         
     }
@@ -89,7 +93,8 @@ function reducer(state = initialState, action){
         return {
             ...state,
             firstName: action.payload.firstName,
-            lastName: action.payload.lastName
+            lastName: action.payload.lastName,
+            error:false
         }
     }
     if(action.type ==='UpdateUserProfileFail'){
@@ -103,6 +108,14 @@ function reducer(state = initialState, action){
 
         return initialState
     }
+    if(action.type === 'LogInPassLocalStorage'){
+
+        return{
+            ...initialState,
+            logIn:true,
+            token: action.payload
+        }
+    }
     else {
         return state
     }
@@ -115,11 +128,11 @@ const reduxDevtools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVT
 
 // The store of Redux to assemble state, actions creators and reducer
 
-const store = createStore(reducer, reduxDevtools)
+const store = createStore(reducer,reduxDevtools)
 
 // Exports
 
 export {initialState}
 export {store}
 export {actionLogInPass,actionLogInFail,actionGetUserProfile,actionGetUserProfileFail}
-export {actionUpdateUserProfile,actionUpdateUserProfileFail,actionLogOut}
+export {actionUpdateUserProfile,actionUpdateUserProfileFail,actionLogInPassLocalStorage,actionLogOut}

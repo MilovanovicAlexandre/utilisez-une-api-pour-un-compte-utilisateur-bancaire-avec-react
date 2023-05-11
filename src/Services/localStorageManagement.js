@@ -1,6 +1,6 @@
 function recordOfTokenInLocalStorage(token,rememberMe) {
 
-    if(rememberMe === true){
+    if(rememberMe === true){        
         localStorage.setItem('token',token)
     }
     else {
@@ -10,8 +10,9 @@ function recordOfTokenInLocalStorage(token,rememberMe) {
 
 function deleteTokenInLocalStorage() {
     
-    localStorage.removeItem('token')
-    sessionStorage.removeItem('token')
+    //localStorage.removeItem('token')
+    localStorage.clear();    
+    sessionStorage.clear()
 }
 
 export {recordOfTokenInLocalStorage,deleteTokenInLocalStorage}

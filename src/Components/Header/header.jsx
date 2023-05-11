@@ -37,7 +37,7 @@ function Header() {
                   </p>
                 </div>
               </Link>
-              {stateRetrieved.logIn === true && stateRetrieved.firstName !== null && stateRetrieved.lastName !== null ? (
+              {(stateRetrieved.logIn === true && stateRetrieved.firstName !== null && stateRetrieved.lastName !== null) ? (
                 <Link className='main-nav-item2' to='/Home' onClick={() => submissionLogOut()}>  
                   <div className='main-nav-item-logOut'>
                     <i className="fa fa-sign-out"></i>

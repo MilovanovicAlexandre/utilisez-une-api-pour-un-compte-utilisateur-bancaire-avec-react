@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# App using an API for a bank's account user with React
 
-## Available Scripts
+<img src="src/Assets/imageREADME.png" alt="Image de première page de l'application" title="Image de première page de l'application"/>
 
-In the project directory, you can run:
+This app is based on React where users can sign to their bank's account and modify their personnal data.
+The file explains how to install the app (frontEnd and backEnd) and how to execute it.
+Before installing this app you need to fulfill all prerequisites indicated below.
+Detailed explanations are given about frontEnd'app and backEnd's app setup.
 
-### `npm start`
+## Developed with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- <a href="https://fr.legacy.reactjs.org/">React</a>
+- <a href="https://redux.js.org/">Redux</a>
+- <a href="https://reactrouter.com/en/main">React-Router</a>
+- <a href="https://axios-http.com/">Axios for HTTP requests</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites for the FrontEnd's app
 
-### `npm test`
+- Install npm => <a href='https://nodejs.org/en'>https://nodejs.org/en</a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+### Run backEnd's app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The backEnd's app was made by the Openclassrooms's team
+- Go to the repository below and follow the instructions to install and execute backEnd's app:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    <a href="https://github.com/MilovanovicAlexandre/Project-10-Bank-API">https://github.com/MilovanovicAlexandre/Project-10-Bank-API</a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run FrontEnd's app
+#### Download this repository on your computer
 
-### `npm run eject`
+- Enter the following command in your computer terminal:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    git clone <a href="https://github.com/MilovanovicAlexandre/utilisez-une-api-pour-un-compte-utilisateur-bancaire-avec-react">https://github.com/MilovanovicAlexandre/utilisez-une-api-pour-un-compte-utilisateur-bancaire-avec-react</a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Install and Launch frontEnd's app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- On your computer terminal go to the root of the repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Enter the following command in your computer terminal to install the dependencies:
 
-## Learn More
+    npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Enter the following command in your computer terminal to run the Frontend's app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    npm start
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Frontend'app is now available on: <a href='http://localhost:3000/Home'>http://localhost:3000/Home</a>

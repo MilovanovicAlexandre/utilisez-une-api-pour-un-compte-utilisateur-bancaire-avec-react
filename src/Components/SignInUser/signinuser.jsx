@@ -23,24 +23,25 @@ function SignInUser() {
     function submissionSignIn(event) {
       event.preventDefault()
       getTokenLogin(email,password).then(function(token){
-        console.log('token='+token)
+        //console.log('token='+token)
         dispatch(actionLogInPass(token))
-        recordOfTokenInLocalStorage(token,rememberMe)
         getUserProfile(token).then(function(response){
           dispatch(actionGetUserProfile(response))
+          recordOfTokenInLocalStorage(token,rememberMe)
         })
-        .catch(function(){
+        .catch(function(error){
           dispatch(actionGetUserProfileFail())
+          console.log('error: '+error)
         })
       })
       .catch(function(error){
-        console.log('error: '+error)
         dispatch(actionLogInFail(error))
+        console.log('error: '+error)
       })
     }
 
     useEffect(() =>{
-      console.log('stateRetrieved.presentState='+stateRetrieved.presentState)
+     
       if(stateRetrieved.logIn === true){
         navigate('/User')
       }
