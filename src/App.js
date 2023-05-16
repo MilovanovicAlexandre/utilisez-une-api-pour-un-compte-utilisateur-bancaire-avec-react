@@ -36,7 +36,7 @@ async function retrievePersistentConnection(){
 
   useEffect(()=>{
     retrievePersistentConnection()
-  },[])
+  })
 
   return (
     <div>
