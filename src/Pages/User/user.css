@@ -1,8 +1,6 @@
 .main2 {
   flex: 1;
-  /*padding-top:5px;*/
   min-height: calc(100vh - 30px);
-  /*min-height: calc(100vh + 100px);*/
 }
   
 .bg-dark {
@@ -12,16 +10,13 @@
 .header {
   color: #fff;
   margin-bottom: 2rem;
-  /*background-color: yellow;*/
   padding-top:5px;
 }
 
 .header2 {
   color: #fff;
-  /*margin-bottom: 2rem;*/
   padding-bottom: 2rem;
   background-color: #e0e6ed;
-  /*background-color: yellow;*/
   padding-top:5px;
 }
 
@@ -86,7 +81,6 @@
 }
 
 .container-buttonsSaveAndCancel {
-  /*background-color: yellow;*/
   margin-top:10px;
 }
 

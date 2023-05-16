@@ -23,7 +23,6 @@ function SignInUser() {
     function submissionSignIn(event) {
       event.preventDefault()
       getTokenLogin(email,password).then(function(token){
-        //console.log('token='+token)
         dispatch(actionLogInPass(token))
         getUserProfile(token).then(function(response){
           dispatch(actionGetUserProfile(response))

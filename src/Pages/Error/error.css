@@ -22,6 +22,12 @@
     width:25%;    
 }
 
+.containerLinkError404:hover {
+    text-decoration: underline;
+    font-size: 25px;
+    color:white;
+}
+
 .containerLinkError404 a {
     text-decoration: none;
 }
@@ -29,5 +35,4 @@
 .textLinkError404 {
     font-size: 25px;
     color:white;
-    text-decoration: underline;
 }

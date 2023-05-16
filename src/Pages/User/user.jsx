@@ -27,14 +27,9 @@ function User() {
     function recordingDataProfile() {
 
         const regexNames=/^[a-zA-Z-]+$/;
-
-        //console.log('regexNames.test(entryFirstName)= '+regexNames.test(entryFirstName))
-        //console.log('regexNames.test(entryLastName)= '+regexNames.test(entryLastName))
-
         let namesareValid = (regexNames.test(entryFirstName)) && (regexNames.test(entryLastName))
-        //console.log('namesareValid= '+namesareValid)
 
-        if(namesareValid) {
+        if(namesareValid && entryFirstName !=='' && entryLastName !=='') {
             updateUserProfile(stateRetrieved.token,entryFirstName,entryLastName).then(function(response){
                 dispatch(actionUpdateUserProfile(response.data.body))
                 setEditName(false)

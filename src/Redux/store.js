@@ -62,7 +62,8 @@ function reducer(state = initialState, action){
         return {
             ...state,
             logIn:true,
-            token: action.payload
+            token: action.payload,
+            error:false
         }
     }
     if(action.type ==='LogInFail'){
