@@ -38,6 +38,7 @@ async function retrievePersistentConnection(){
     retrievePersistentConnection()
   })
 
+  
   return (
     <div>
       <Router>
